@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapsify.Official Store - iPhone Premium untuk Gen Z</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-mobile-alt"></i> Rapsify</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">iPhone</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart" id="cartIcon"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">iPhone Premium <span class="gradient-text">Gen Z Edition</span></h1>
+            <p class="hero-subtitle">Modern. Stylish. Rapsify. Dapatkan iPhone terbaik dengan harga spesial!</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToProducts()">Lihat iPhone</button>
+                <button class="btn btn-secondary" onclick="openWhatsApp()">Hubungi Kami <i class="fab fa-whatsapp"></i></button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-iphone">
+                <div class="iphone-screen"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">iPhone Collection <span class="gradient-text">Rapsify</span></h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products akan dimuat via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CART MODAL -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-cart"></i> Keranjang Belanja</h3>
+                <span class="close-cart" id="closeCart">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-total">
+                <h4>Total: <span id="cartTotal">Rp 0</span></h4>
+            </div>
+            <div class="cart-actions">
+                <button class="btn btn-yellow" onclick="checkout()">Checkout <i class="fab fa-whatsapp"></i></button>
+                <button class="btn btn-secondary" onclick="clearCart()">Kosongkan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi <span class="gradient-text">Kami</span></h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/6285281296342" target="_blank">085281296342</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p><a href="https://instagram.com/rapsify.id" target="_blank">@rapsify.id</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Lokasi</h3>
+                    <p>Depok, Kalimulya (16413)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Rapsify.Official Store. All rights reserved. Made with <i class="fas fa-heart"></i> for Gen Z.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
